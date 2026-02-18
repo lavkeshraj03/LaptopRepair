@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero';
+import Brands from '../components/Brands';
 import ServicesSection from '../components/ServicesSection';
 import WhyChooseUs from '../components/WhyChooseUs';
 import HowItWorks from '../components/HowItWorks';
@@ -10,6 +11,7 @@ const Home = () => {
     return (
         <div className="overflow-hidden">
             <Hero />
+            <Brands />
             <ServicesSection />
             <WhyChooseUs />
             <HowItWorks />

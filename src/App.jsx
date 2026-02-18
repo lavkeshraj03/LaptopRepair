@@ -7,9 +7,10 @@ import ScrollToTop from './components/ScrollToTop';
 // Lazy load pages for better performance
 const Home = lazy(() => import('./pages/Home'));
 const Services = lazy(() => import('./pages/Services'));
-const Pricing = lazy(() => import('./pages/Pricing'));
 const BookRepair = lazy(() => import('./pages/BookRepair'));
 const Contact = lazy(() => import('./pages/Contact'));
+const Terms = lazy(() => import('./pages/Terms'));
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
 
 function App() {
   return (
@@ -22,9 +23,10 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/services" element={<Services />} />
-              <Route path="/pricing" element={<Pricing />} />
               <Route path="/book-repair" element={<BookRepair />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/terms" element={<Terms />} />
+              <Route path="/privacy" element={<PrivacyPolicy />} />
             </Routes>
           </Suspense>
         </main>
@@ -32,7 +34,7 @@ function App() {
 
         {/* Floating WhatsApp Button */}
         <a
-          href="https://wa.me/1234567890"
+          href="https://wa.me/919717343568"
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-8 right-8 bg-green-500 p-4 rounded-full shadow-lg hover:shadow-[0_0_20px_rgba(34,197,94,0.5)] hover:scale-110 transition-all z-50 flex items-center justify-center text-white"

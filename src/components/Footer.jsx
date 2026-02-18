@@ -24,7 +24,6 @@ const Footer = () => {
                     <h4 className="text-white font-semibold mb-6">Quick Links</h4>
                     <ul className="space-y-3">
                         <li><Link to="/services" className="hover:text-primary transition-colors">Our Services</Link></li>
-                        <li><Link to="/pricing" className="hover:text-primary transition-colors">Pricing</Link></li>
                         <li><Link to="/book-repair" className="hover:text-primary transition-colors">Book a Repair</Link></li>
                         <li><Link to="/contact" className="hover:text-primary transition-colors">Contact Us</Link></li>
                     </ul>
@@ -36,35 +35,24 @@ const Footer = () => {
                     <ul className="space-y-4">
                         <li className="flex items-start gap-3">
                             <MapPin size={20} className="text-primary shrink-0 mt-1" />
-                            <span>123 Tech Avenue, Silicon Valley, CA 94043</span>
+                            <span>Gate No.-1, Sharma Market, F-3, 1st Floor, Near Metro Station Noida Sector 18, Atta, Sector 27, Noida, UP 201301</span>
                         </li>
                         <li className="flex items-center gap-3">
                             <Phone size={20} className="text-primary shrink-0" />
-                            <span>+1 (555) 123-4567</span>
+                            <span>+91 9717343568</span>
                         </li>
                         <li className="flex items-center gap-3">
                             <Mail size={20} className="text-primary shrink-0" />
-                            <span>support@macccomputer.com</span>
+                            <span>computer.macc@gmail.com</span>
                         </li>
                     </ul>
                 </div>
-
-                {/* Hours */}
+                {/* Legal Links */}
                 <div>
-                    <h4 className="text-white font-semibold mb-6">Business Hours</h4>
+                    <h4 className="text-white font-semibold mb-6">Legal</h4>
                     <ul className="space-y-3">
-                        <li className="flex justify-between items-center">
-                            <span>Mon - Fri</span>
-                            <span className="text-white">9:00 AM - 7:00 PM</span>
-                        </li>
-                        <li className="flex justify-between items-center">
-                            <span>Saturday</span>
-                            <span className="text-white">10:00 AM - 5:00 PM</span>
-                        </li>
-                        <li className="flex justify-between items-center">
-                            <span>Sunday</span>
-                            <span className="text-primary">Closed</span>
-                        </li>
+                        <li><Link to="/terms" className="hover:text-primary transition-colors">Terms & Conditions</Link></li>
+                        <li><Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
                     </ul>
                 </div>
             </div>

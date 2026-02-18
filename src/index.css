@@ -22,23 +22,46 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0f0f0f;
+  background: #02040a;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #333;
   border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0066ff;
+  background: #D4AF37;
 }
 
 /* Glassmorphism Utilities */
 .glass-card {
-  @apply bg-white/5 backdrop-blur-lg border border-white/10 shadow-xl;
+  @apply bg-secondary/30 backdrop-blur-xl border border-white/5 shadow-2xl;
 }
 
 .text-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#D4AF37] to-[#f59e0b];
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+.pause-on-hover:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+.hero-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.15), transparent 60%);
 }
