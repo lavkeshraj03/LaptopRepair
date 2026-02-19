@@ -71,7 +71,7 @@ const Contact = () => {
                             style={{ border: 0, minHeight: '400px' }}
                             allowFullScreen=""
                             loading="lazy"
-                            className="absolute inset-0 grayscale invert contrast-125 opacity-80 hover:opacity-100 transition-opacity duration-500"
+                            className="absolute inset-0 opacity-80 hover:opacity-100 transition-opacity duration-500"
                         ></iframe>
                     </GlassCard>
                 </div>
